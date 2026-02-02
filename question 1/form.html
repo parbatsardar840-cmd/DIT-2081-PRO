@@ -2,58 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Student form</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-        }
-        .form-box {
-            width: 350px;
-            background: #ffffff;
-            padding: 20px;
-            margin: 80px auto;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
-        }
-        h2 {
-            text-align: center;
-        }
-        input, select {
-            width: 100%;
-            padding: 8px;
-            margin: 8px 0;
-        }
-        button {
-            width: 100%;
-            padding: 10px;
-            background: green;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        button:hover {
-            background: darkgreen;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
 </head>
 <body>
 
-<div class="form-box">
-    <h2>Student Form</h2>
+<fieldset>
+    <legend align="center"><h2>Student Form</h2></legend>
+
     <form>
-        <input type="text" placeholder="Name" required>
-        <input type="number" placeholder="Roll no." required>
-        <input type="year" placeholder="year" required>
-        <input type="faculty" placeholder="faculty" required>
-        <input type="email" placeholder="email" required>
+        Name:
+        <input type="text" name="name"><br><br>
 
-        <input type="radio" name="gender"> Male
-        <input type="radio" name="gender"> Female <br>
+        Email:
+        <input type="email" name="email"><br><br>
 
-        <button type="submit">submit</button>
+        Password:
+        <input type="password" name="password"><br><br>
+
+        Faculty:
+        <select name="faculty">
+            <option value="DIT">Information Technology</option>
+            <option value="DCE">Civil Engineering</option>
+            <option value="commerce">Commerce</option>
+            <option value="engineering">Engineering</option>
+        </select><br><br>
+
+        DOB:
+        <input type="date" name="dob"><br><br>
+
+        Gender:
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <br><br>
+
+        Hobbies:
+        <input type="checkbox" name="hobbies" value="reading"> Reading
+        <input type="checkbox" name="hobbies" value="traveling"> Traveling
+        <input type="checkbox" name="hobbies" value="sports"> Sports
+        <br><br>
+
+        Comments:<br>
+        <textarea name="comments" rows="4" cols="30"></textarea>
+        <br><br>
+
+        <input type="submit" value="Submit">
     </form>
-</div>
+</fieldset>
 
 </body>
 </html>
