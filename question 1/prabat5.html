@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prabat Sardar | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(-45deg,#1d2671,#c33764,#f5af19,#f12711);
+    background-size:400% 400%;
+    animation: gradient 15s ease infinite;
+    color:white;
+    scroll-behavior: smooth;
+}
+
+@keyframes gradient{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.5);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 10%;
+    z-index:1000;
+    backdrop-filter: blur(10px);
+}
+
+header h1{
+    font-size:24px;
+}
+
+nav a{
+    color:white;
+    margin-left:20px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:orange;
+}
+
+section{
+    min-height:100vh;
+    padding:100px 10%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero h2{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.hero span{
+    color:orange;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+button{
+    padding:12px 25px;
+    border:none;
+    border-radius:25px;
+    cursor:pointer;
+    font-size:16px;
+    background:orange;
+    transition:0.3s;
+}
+
+button:hover{
+    background:red;
+    color:white;
+}
+
+.profile img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:5px solid white;
+    margin-bottom:20px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{ transform:translateY(0px);}
+    50%{ transform:translateY(-15px);}
+    100%{ transform:translateY(0px);}
+}
+
+.card-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+    background:rgba(255,255,255,0.1);
+    margin:15px;
+    padding:20px;
+    width:250px;
+    border-radius:15px;
+    backdrop-filter: blur(10px);
+    text-align:center;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.05);
+}
+
+input, textarea{
+    padding:10px;
+    border-radius:10px;
+    border:none;
+    width:100%;
+    margin:5px 0;
+}
+
+form{
+    max-width:400px;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:rgba(0,0,0,0.3);
+}
+
+@media(max-width:768px){
+    .card-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    header{
+        flex-direction:column;
+        gap:10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Prabat Sardar</h1>
+    <nav>
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="hero" class="hero">
+    <div class="profile">
+        <img src="Photo.jpg" alt="Prabat Sardar">
+    </div>
+    <h2>Hello, I'm <span>Prabat</span> 👋</h2>
+    <p>Front-End Developer | HTML | CSS | JavaScript</p>
+    <button onclick="hireMe()">Hire Me</button>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate web developer from Nepal. I love coding, building modern websites, and learning new technologies.</p>
+</section>
+
+<section id="skills">
+    <h2>My Skills</h2>
+    <div class="card-container">
+        <div class="card">HTML</div>
+        <div class="card">CSS</div>
+        <div class="card">JavaScript</div>
+        <div class="card">React</div>
+        <div class="card">Bootstrap</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="card-container">
+        <div class="card">Personal Website</div>
+        <div class="card">Login Page</div>
+        <div class="card">Mini Game</div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form onsubmit="sendMessage(event)">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+        <button type="button" onclick="downloadCV()">Download CV</button>
+    </form>
+</section>
+
+<footer>
+    © 2026 Prabat Sardar | All Rights Reserved
+</footer>
+
+<script>
+function hireMe(){
+    alert("Thanks for visiting my portfolio! 😎");
+}
+
+function sendMessage(e){
+    e.preventDefault();
+    alert("Message sent successfully! 🚀");
+}
+
+function downloadCV(){
+    window.open('Prabat_CV.pdf', '_blank');
+}
+</script>
+
+</body>
+</html>

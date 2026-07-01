@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prabat's Stylish Page</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            padding: 30px;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            margin: 20px auto;
+            width: 60%;
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+        }
+
+        ol {
+            text-align: left;
+            display: inline-block;
+        }
+
+        a {
+            color: yellow;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        button {
+            background-color: #ff9800;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Welcome to Prabat's Page 🚀</h1>
+        <p>This is my personal stylish webpage.</p>
+
+        <div class="card">
+            <h2>My Hobbies</h2>
+            <ol>
+                <li>Coding</li>
+                <li>Traveling</li>
+                <li>Cooking</li>
+                <li>Photography</li>
+                <li>Playing Games</li>
+                <li>Reading</li>
+                <li>Sleeping</li>
+            </ol>
+        </div>
+
+        <div class="card">
+            <h2>Contact Me</h2>
+            <p>Email: prabatsardar10@gmail.com</p>
+            <p>Phone: 9706503017</p>
+            <p>
+                LinkedIn: <a href="https://www.linkedin.com/" target="_blank">Visit Profile</a><br>
+                GitHub: <a href="https://github.com/" target="_blank">Visit GitHub</a>
+            </p>
+        </div>
+
+        <button onclick="showMessage()">Click Me</button>
+    </div>
+
+    <script>
+        function showMessage() {
+            alert("Hello! Welcome to Prabat's Stylish Website 😎🔥");
+        }
+    </script>
+
+</body>
+</html>

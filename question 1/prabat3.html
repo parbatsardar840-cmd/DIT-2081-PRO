@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prabat's Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#1d2671,#c33764);
+    color:white;
+    text-align:center;
+}
+
+header{
+    padding:30px;
+    font-size:32px;
+    font-weight:bold;
+}
+
+.profile{
+    margin-top:20px;
+}
+
+.profile img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:5px solid white;
+    transition:0.4s;
+    animation: float 3s ease-in-out infinite;
+}
+
+.profile img:hover{
+    transform:scale(1.1);
+}
+
+@keyframes float{
+    0%{ transform:translateY(0px); }
+    50%{ transform:translateY(-15px); }
+    100%{ transform:translateY(0px); }
+}
+
+.container{
+    width:80%;
+    margin:20px auto;
+}
+
+.card{
+    background:rgba(255,255,255,0.2);
+    padding:20px;
+    margin:20px 0;
+    border-radius:15px;
+}
+
+button{
+    padding:10px 20px;
+    margin:10px;
+    border:none;
+    border-radius:25px;
+    cursor:pointer;
+    font-size:16px;
+    background:orange;
+}
+
+button:hover{
+    background:red;
+    color:white;
+}
+</style>
+</head>
+
+<body>
+
+<header>Welcome to Prabat's Portfolio 🚀</header>
+
+<div class="profile">
+    <!-- Replace photo.jpg with your image name -->
+    <img src="ppt.jpg" alt="Prabat's Photo">
+</div>
+
+<div class="container">
+
+<div class="card">
+<h2>About Me</h2>
+<p>Hello! I am Prabat. I love coding, gaming and learning new technology.</p>
+</div>
+
+<div class="card">
+<h2>My Hobbies</h2>
+<p>Coding | Traveling | Photography | Gaming</p>
+</div>
+
+<button onclick="showMessage()">Say Hello</button>
+
+</div>
+
+<script>
+function showMessage(){
+    alert("Hello Parbat 😎🔥 Your portfolio is now professional!");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prabat Sardar | Developer</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:#0f2027;
+    background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+    color:white;
+}
+
+header{
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header h1{
+    font-size:28px;
+}
+
+nav a{
+    color:white;
+    margin-left:20px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:orange;
+}
+
+.hero{
+    height:80vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h2{
+    font-size:40px;
+}
+
+.hero span{
+    color:orange;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:18px;
+}
+
+button{
+    padding:10px 20px;
+    border:none;
+    border-radius:25px;
+    cursor:pointer;
+    background:orange;
+    font-size:16px;
+}
+
+button:hover{
+    background:red;
+    color:white;
+}
+
+.section{
+    padding:50px 10%;
+    text-align:center;
+}
+
+.card{
+    background:rgba(255,255,255,0.1);
+    padding:20px;
+    margin:20px;
+    border-radius:15px;
+    display:inline-block;
+    width:250px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:rgba(0,0,0,0.3);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Prabat Sardar</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Hello, I'm <span>Prabat</span> 👋</h2>
+    <p>Front-End Developer | HTML | CSS | JavaScript</p>
+    <button onclick="hireMe()">Hire Me</button>
+</section>
+
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I am a passionate developer from Nepal who loves coding and building modern websites.</p>
+</section>
+
+<section id="skills" class="section">
+    <h2>My Skills</h2>
+    <div class="card">HTML</div>
+    <div class="card">CSS</div>
+    <div class="card">JavaScript</div>
+</section>
+
+<section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="card">Personal Website</div>
+    <div class="card">Login Page</div>
+    <div class="card">Mini Game</div>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p>Email: prabatsardar10@gmail.com</p>
+    <p>Phone: 9706503017</p>
+</section>
+
+<footer>
+    © 2026 Prabat Sardar | All Rights Reserved
+</footer>
+
+<script>
+function hireMe(){
+    alert("Thank you for visiting my portfolio 😎🔥");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stylish Registration Form</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            font-family: Arial, sans-serif;
+            background: url("background.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .form-container{
+            width: 400px;
+            margin: 60px auto;
+            padding: 25px;
+            background: rgba(255,255,255,0.9);
+            border-radius: 15px;
+            box-shadow: 0 0 20px black;
+        }
+
+        h2{
+            text-align:center;
+            margin-bottom:20px;
+        }
+
+        label{
+            font-weight:bold;
+        }
+
+        input, select{
+            width:100%;
+            padding:10px;
+            margin:8px 0 15px 0;
+            border-radius:8px;
+            border:1px solid gray;
+        }
+
+        input[type="file"]{
+            border:none;
+        }
+
+        button{
+            width:100%;
+            padding:12px;
+            background: linear-gradient(to right, #ff416c, #ff4b2b);
+            color:white;
+            border:none;
+            border-radius:8px;
+            font-size:16px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            opacity:0.8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Registration Form</h2>
+
+    <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Password</label>
+        <input type="password" placeholder="Enter password" required>
+
+        <label>Gender</label>
+        <select>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+
+        <label>Date of Birth</label>
+        <input type="date">
+
+        <label>Upload Photo</label>
+        <input type="file" accept="image/*">
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+</body>
+</html>

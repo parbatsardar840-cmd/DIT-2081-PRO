@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prabat's Modern Page</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body{
+        background: linear-gradient(-45deg,#667eea,#764ba2,#6dd5ed,#2193b0);
+        background-size: 400% 400%;
+        animation: gradient 10s ease infinite;
+        color:white;
+        text-align:center;
+        transition:0.4s;
+    }
+
+    @keyframes gradient{
+        0%{background-position:0% 50%;}
+        50%{background-position:100% 50%;}
+        100%{background-position:0% 50%;}
+    }
+
+    .dark{
+        background:#111;
+    }
+
+    header{
+        padding:25px;
+        font-size:30px;
+        font-weight:bold;
+        background:rgba(0,0,0,0.3);
+    }
+
+    .container{
+        width:80%;
+        margin:20px auto;
+    }
+
+    .card{
+        background:rgba(255,255,255,0.2);
+        margin:20px 0;
+        padding:20px;
+        border-radius:15px;
+        backdrop-filter: blur(10px);
+        transition:0.3s;
+    }
+
+    .card:hover{
+        transform:scale(1.05);
+    }
+
+    h2{
+        margin-bottom:10px;
+        color:yellow;
+    }
+
+    ol{
+        text-align:left;
+        display:inline-block;
+    }
+
+    a{
+        color:cyan;
+        text-decoration:none;
+        font-weight:bold;
+    }
+
+    a:hover{
+        color:red;
+    }
+
+    button{
+        padding:10px 20px;
+        margin:10px;
+        border:none;
+        border-radius:25px;
+        cursor:pointer;
+        font-size:16px;
+    }
+
+    .btn1{ background:orange; }
+    .btn2{ background:black; color:white; }
+
+    button:hover{
+        opacity:0.8;
+    }
+</style>
+</head>
+
+<body>
+
+<header>Welcome to Prabat's Personal Website 🚀</header>
+
+<div class="container">
+
+<div class="card">
+<p>Hello! This is my personal webpage where you can find my hobbies, contact details and family information.</p>
+</div>
+
+<div class="card">
+<h2>Hobbies</h2>
+<ol>
+<li>Coding</li>
+<li>Traveling</li>
+<li>Cooking</li>
+<li>Photography</li>
+<li>Playing Games</li>
+<li>Reading</li>
+<li>Sleeping</li>
+</ol>
+</div>
+
+<div class="card">
+<h2>Contact Information</h2>
+<p>Email: prabatsardar10@gmail.com</p>
+<p>Phone: 9706503017</p>
+<p>LinkedIn: <a href="#">Visit Profile</a></p>
+<p>GitHub: <a href="#">Visit GitHub</a></p>
+</div>
+
+<div class="card">
+<h2>Family Details</h2>
+<p>Father: Mr. Ram Sardar</p>
+<p>Mother: Mrs. Shree Kumari Sardar</p>
+<p>Brothers & Sisters: Prabhash, Prashant, Prabesh, Priyanka, Keli, Laxmi</p>
+</div>
+
+<button class="btn1" onclick="welcome()">Click Me</button>
+<button class="btn2" onclick="darkMode()">Dark Mode</button>
+
+</div>
+
+<script>
+function welcome(){
+    alert("Welcome Parbat 😎🔥 Your website looks awesome!");
+}
+
+function darkMode(){
+    document.body.classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>
